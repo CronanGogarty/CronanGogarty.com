@@ -1,0 +1,17 @@
+# USER SELECTED FILES #
+#######################
+*.config
+
+# BOOTSTRAP FILES #
+###################
+Styles/Bootstrap-Less/
+Styles/bootstrap-theme.css
+Styles/bootstrap.css
+
+# SCRIPTS #
+###########
+Scripts/
+
+# GRUNT FILES & NODE MODULES #
+################
+node_modules/

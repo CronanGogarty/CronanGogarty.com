@@ -1,0 +1,14 @@
+﻿{
+    "name": "cronangogarty.com",
+    "version": "0.1.0",
+    "description": "Add Grunt to this project",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "",
+    "author": "Cronán Gogarty",
+    "license": "BSD",
+    "devDependencies": {
+        "grunt": "~0.4.1"
+    }
+}

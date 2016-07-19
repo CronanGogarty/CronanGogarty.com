@@ -1,0 +1,69 @@
+﻿@import (reference) "Bootstrap-Less/variables.less";
+@import (reference) "Bootstrap-Less/grid.less";
+@import (reference) "Bootstrap-Less/utilities.less";
+@import (reference) "Bootstrap-Less/mixins.less";
+@import (reference) "Bootstrap-Less/forms.less";
+@import (reference) "Bootstrap-Less/navbar.less";
+@import (reference) "Bootstrap-Less/jumbotron.less";
+@import (reference) "Bootstrap-Less/buttons.less";
+@import (reference) "Bootstrap-Less/responsive-utilities.less";
+
+@cronan-light-silver: #c9c9c9;
+@cronan-light-grey: ##F2F2F3;
+@cronan-dark-grey: #3e3e3e;
+@cronan-blue: #014AFD;
+@cronan-orange: #E54026;
+@cronan-white: #fff;
+@cronan-black: #252525;
+
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('/Content/Fonts/cairo-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/Content/Fonts/cairo-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/Content/Fonts/cairo-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/Content/Fonts/cairo-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/Content/Fonts/cairo-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/Content/Fonts/cairo-regular-webfont.svg#cairoregular') format('svg'); /* Legacy iOS */
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    > main > ul > li {
+        list-style:none;
+    }
+}
+
+header {
+    h1 {
+        font-family: 'Cairo-Regular';
+    }
+}
+
+.jumbotron {
+    .text-center();
+    &:extend(.orangeShadow);
+    /*background-color: @cronan-blue;
+    color: @cronan-light-grey;*/
+    
+}
+
+main {
+    .text-center();
+}
+
+.text-center() {
+    text-align: center;
+}
+
+.orangeShadow {
+    -moz-box-shadow: 0 3px @cronan-orange;
+    -webkit-box-shadow: 0 3px @cronan-orange;
+    box-shadow: 0 3px @cronan-orange;
+}
+

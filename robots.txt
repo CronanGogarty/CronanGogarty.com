@@ -1,0 +1,13 @@
+﻿User-agent: Googlebot-Image
+Allow: /Content/Images/Cronan-Gogarty/
+
+User-agent: *
+Allow: https://github.com/CronanGogarty
+Disallow: 
+Disallow: /Previous-Work
+Disallow: /CSSAnthology
+Disallow: /70-480
+Disallow: /Scripts
+Disallow: /Styles
+Disallow: /node-modules
+Sitemap: http://www.cronangogarty.com/sitemap.xml
