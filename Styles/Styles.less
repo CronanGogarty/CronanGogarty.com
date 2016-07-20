@@ -66,6 +66,13 @@ header {
     }
 }
 
+section#wrapper {
+    + hr{
+        border:3px solid @cronan-orange;
+        margin-bottom:0;
+    }
+}
+
 main {
     #intro{
         font-family: 'Archivo Narrow', sans-serif;
@@ -90,9 +97,29 @@ main {
     }
 }
 
-article#bio {
-    .row();
+footer{
+    background-color:@cronan-dark-grey;
+    color:@cronan-light-grey;
+    #topFooter{
+        min-height:100px;
+        img{
+            margin:2em 0 2em 2em;
+        }
+    }
+    #subFooter{
+        background-color:@cronan-black;
+
+        min-height:30px;
+        p{
+            padding-top:5px;
+            margin:0;
+        }
+    }
 }
+
+/*article#bio {
+    .row();
+}*/
 .text-center() {
     text-align: center;
 }
