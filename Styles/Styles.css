@@ -1,4 +1,6 @@
-﻿.container:before,
+﻿@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+.container:before,
 .container:after,
 .container-fluid:before,
 .container-fluid:after,
@@ -11,7 +13,9 @@
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after {
+.navbar-collapse:after,
+article#bio:before,
+article#bio:after {
   content: " ";
   display: table;
 }
@@ -21,9 +25,11 @@
 .form-horizontal .form-group:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after {
+.navbar-collapse:after,
+article#bio:after {
   clear: both;
 }
+/*IMPORT FONTS FROM GOOGLE FONTS */
 @font-face {
   font-family: 'Cairo-Regular';
   src: url('/Content/Fonts/cairo-regular-webfont.eot');
@@ -47,16 +53,69 @@ header h1 {
 }
 .jumbotron {
   text-align: center;
-  /*background-color: @cronan-blue;
-    color: @cronan-light-grey;*/
+  background-color: #e54026;
+  color: #ffffff;
+  margin-top: 50px;
 }
-main {
-  text-align: center;
+.jumbotron h1 {
+  margin-top: 0;
+}
+.jumbotron p {
+  color: ##F2F2F3;
+}
+main #intro {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.15em;
+  font-weight: 400;
+  background-color: #252525;
+  color: #ffffff;
+  margin-bottom: 2em;
+}
+main #intro h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #e54026;
+  font-size: 30px;
+  font-weight: 400;
+}
+main #intro img {
+  margin: 15px;
+}
+main #intro div#introImage {
+  padding-left: 0;
+}
+article#bio {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .orangeShadow,
-.jumbotron {
+main #intro {
   -moz-box-shadow: 0 3px #e54026;
   -webkit-box-shadow: 0 3px #e54026;
   box-shadow: 0 3px #e54026;
+}
+.blackShadow,
+.jumbotron {
+  -moz-box-shadow: 0 3px #252525;
+  -webkit-box-shadow: 0 3px #252525;
+  box-shadow: 0 3px #252525;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: ##F2F2F3;
+}
+.navbar-inverse .navbar-nav > li > a :hover {
+  color: #ffffff;
+}
+mark {
+  background-color: rgba(229, 64, 38, 0.5);
+}
+#cronanSnowboard1 {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+@media (max-width: 767px) {
+  #cronanSnowboard1 {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=Styles.css.map */

@@ -1,6 +1,8 @@
 # USER SELECTED FILES #
 #######################
 *.config
+*.sln
+*.sou
 
 # BOOTSTRAP FILES #
 ###################

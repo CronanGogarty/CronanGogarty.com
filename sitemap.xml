@@ -8,12 +8,17 @@
 
 <url>
   <loc>http://www.cronangogarty.com/</loc>
-  <lastmod>2016-07-10T10:46:06+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <lastmod>2016-07-20T07:15:24+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.cronangogarty.com/Cronan-Gogarty.html</loc>
-  <lastmod>2016-07-10T10:30:15+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.cronangogarty.com/bio.html</loc>
+  <lastmod>2016-07-20T08:04:36+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.cronangogarty.com/index.html</loc>
+  <lastmod>2016-07-20T07:15:24+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 </urlset>
