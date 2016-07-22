@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title | CronanGogarty.com</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="Cronán Gogarty" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--<link href="Styles/bootstrap-theme.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="/Styles/Styles.min.css" media="screen">
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!--[if lte IE 6]>
+        <link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection">
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink("About", "About", "Home")<span class="sr-only">(current)</span></li>
+                    @*<li>@Html.ActionLink("Portfolio", "Portfolio", "Home")</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    <hr />
+
+    <footer class="text-center">
+        <div id="topFooter" class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-6 text-right">
+                    <a href="https://www.facebook.com/cronan.gogarty" name="Cronan Gogarty Facebook" target="_blank"><img src="/Content/Images/Icons/Facebook-black.svg" alt="Facebook Icon" /></a>
+                    <a href="https://twitter.com/CronanGogarty" name="Cronan Gogarty Twitter" target="_blank"><img src="/Content/Images/Icons/Twitter-black.svg" alt="Twitter Icon" /></a>
+                    <a href="http://www.linkedin.com/in/cronangogarty " name="Cronan Gogarty LinkedIn" target="_blank"><img src="/Content/Images/Icons/LinkedIn-black.svg" alt="LinkedIn Icon" /></a>
+                    <a href="https://soundcloud.com/littledarkone/tracks" name="Cronan Gogarty Soundcloud Tracks" target="_blank"><img src="/Content/Images/Icons/Soundcloud-black.svg" alt="Soundcloud Icon" /></a>
+                    <!--<div class="row" id="iconRow">
+                        <div class="col-xs-3"><a href="https://www.facebook.com/cronan.gogarty" name="Cronan Gogarty Facebook" target="_blank"><img class="img-responsive" src="/Content/Images/Icons/Facebook-black.svg" alt="Facebook Icon" /></a></div>
+                        <div class="col-xs-3"><a href="https://twitter.com/CronanGogarty" name="Cronan Gogarty Twitter" target="_blank"><img class="img-responsive" src="/Content/Images/Icons/Twitter-black.svg" alt="Twitter Icon" /></a></div>
+                        <div class="col-xs-3"><a href="http://www.linkedin.com/in/cronangogarty " name="Cronan Gogarty LinkedIn" target="_blank"><img class="img-responsive" src="/Content/Images/Icons/LinkedIn-black.svg" alt="LinkedIn Icon" /></a></div>
+                        <div class="col-xs-3"><a href="https://soundcloud.com/littledarkone/tracks" name="Cronan Gogarty Soundcloud Tracks" target="_blank"><img class="img-responsive" src="/Content/Images/Icons/Soundcloud-black.svg" alt="Soundcloud Icon" /></a></div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div id="subFooter"><p>&copy; Cronán Gogarty 2016</p></div>
+    </footer>
+
+    <!--Modernizr-->
+    <!--script src="--https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script>try { Modernizr } catch (e) { document.write('<script src="/Scripts/Vendor/modernizr-2.8.3.min.js"><\/script>') }</script>-->
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/Scripts/Vendor/jquery-2.2.3.min.js"><\/script>')</script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!--ADS
+    <aside>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- CronanGogarty.com
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2564256331143005"
+             data-ad-slot="8178227848"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </aside>
+    <!--END ADS-->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-80544582-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

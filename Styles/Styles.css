@@ -40,6 +40,8 @@ html {
   box-sizing: border-box;
 }
 body {
+  background-color: #ffffff;
+  color: #000000;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body > main > ul > li {
@@ -87,12 +89,19 @@ main #intro div#introImage {
 footer {
   background-color: #3e3e3e;
   color: ##F2F2F3;
+  padding-top: 2em;
 }
 footer #topFooter {
   min-height: 100px;
+  text-align: right;
+  /*#iconRow{
+            div{
+                
+            }
+        }*/
 }
 footer #topFooter img {
-  margin: 2em 0 2em 2em;
+  margin: 1em 0 1em 1em;
 }
 footer #subFooter {
   background-color: #252525;

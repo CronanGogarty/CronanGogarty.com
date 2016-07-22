@@ -20,8 +20,8 @@
 @cronan-white: #fff;
 @cronan-black: #252525;
 
-@body-bg:    #fff;
-@text-color: #000;
+@cronan-body-bg:    #fff;
+@cronan-text-color: #000;
 
 @font-face {
     font-family: 'Cairo-Regular';
@@ -40,6 +40,8 @@ html {
 }
 
 body {
+    background-color:@cronan-body-bg;
+    color:@cronan-text-color;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     > main > ul > li {
         list-style:none;
@@ -100,10 +102,18 @@ main {
 footer{
     background-color:@cronan-dark-grey;
     color:@cronan-light-grey;
+    padding-top:2em;
     #topFooter{
         min-height:100px;
+        text-align:right;
+        /*#iconRow{
+            div{
+                
+            }
+        }*/
         img{
-            margin:2em 0 2em 2em;
+            margin:1em 0 1em 1em;
+
         }
     }
     #subFooter{
