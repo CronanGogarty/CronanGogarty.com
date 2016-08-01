@@ -13,9 +13,10 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
 @cronan-silver: #c9c9c9;
-@cronan-light-grey: ##F2F2F3;
+@cronan-light-grey: #F2F2F3;
 @cronan-dark-grey: #3e3e3e;
 @cronan-blue: #014AFD;
+@cronan-dull-blue:#31708f;
 @cronan-orange: #E54026;
 @cronan-white: #fff;
 @cronan-black: #252525;
@@ -59,12 +60,13 @@ header {
     &:extend(.blackShadow);   
     background-color:@cronan-orange;
     color:@cronan-white;
-    margin-top:50px;
+    margin-top:50px;    /* 50px is the min-height of top nav bar */
+    @media screen and (min-width: 768px) {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
     h1{
         margin-top:0;
-    }
-    p{
-        color:@cronan-light-grey;
     }
 }
 
@@ -97,11 +99,14 @@ main {
             padding-left:0;
         }
     }
+    a, 
+    a:hover{
+        color:@cronan-orange;
+    }
 }
 
 footer{
     background-color:@cronan-dark-grey;
-    color:@cronan-light-grey;
     padding-top:2em;
     #topFooter{
         min-height:100px;
@@ -118,7 +123,7 @@ footer{
     }
     #subFooter{
         background-color:@cronan-black;
-
+        color:@cronan-dark-grey;
         min-height:30px;
         p{
             padding-top:5px;
@@ -127,9 +132,10 @@ footer{
     }
 }
 
-/*article#bio {
-    .row();
-}*/
+.adsDisclaimer  {
+    color:@cronan-dull-blue;
+}
+
 .text-center() {
     text-align: center;
 }
@@ -146,8 +152,9 @@ footer{
     box-shadow: 0 3px @cronan-black;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: @cronan-light-grey;
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand {
+    color:@cronan-silver;
     :hover{
         color:@cronan-white;
     }
@@ -164,3 +171,7 @@ mark{
     .hidden-xs();
 }
 
+/* PORTFOLIO.CSS - Style added to support portfolio template*/
+.portfolio-item {
+    margin-bottom: 25px;
+}

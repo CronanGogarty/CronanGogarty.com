@@ -55,12 +55,16 @@ header h1 {
   background-color: #e54026;
   color: #ffffff;
   margin-top: 50px;
+  /* 50px is the min-height of top nav bar */
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }
 .jumbotron h1 {
   margin-top: 0;
-}
-.jumbotron p {
-  color: ##F2F2F3;
 }
 section#wrapper + hr {
   border: 3px solid #e54026;
@@ -86,9 +90,12 @@ main #intro img {
 main #intro div#introImage {
   padding-left: 0;
 }
+main a,
+main a:hover {
+  color: #e54026;
+}
 footer {
   background-color: #3e3e3e;
-  color: ##F2F2F3;
   padding-top: 2em;
 }
 footer #topFooter {
@@ -105,15 +112,16 @@ footer #topFooter img {
 }
 footer #subFooter {
   background-color: #252525;
+  color: #3e3e3e;
   min-height: 30px;
 }
 footer #subFooter p {
   padding-top: 5px;
   margin: 0;
 }
-/*article#bio {
-    .row();
-}*/
+.adsDisclaimer {
+  color: #31708f;
+}
 .orangeShadow,
 main #intro {
   -moz-box-shadow: 0 3px #e54026;
@@ -126,10 +134,12 @@ main #intro {
   -webkit-box-shadow: 0 3px #252525;
   box-shadow: 0 3px #252525;
 }
-.navbar-inverse .navbar-nav > li > a {
-  color: ##F2F2F3;
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand {
+  color: #c9c9c9;
 }
-.navbar-inverse .navbar-nav > li > a :hover {
+.navbar-inverse .navbar-nav > li > a :hover,
+.navbar-inverse .navbar-brand :hover {
   color: #ffffff;
 }
 mark {
@@ -144,5 +154,9 @@ mark {
   #cronanSnowboard1 {
     display: none !important;
   }
+}
+/* PORTFOLIO.CSS - Style added to support portfolio template*/
+.portfolio-item {
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=Styles.css.map */
