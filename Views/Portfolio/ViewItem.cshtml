@@ -1,0 +1,39 @@
+﻿@model CronanGogarty.com.Models.PortfolioItem
+
+@{
+    ViewBag.Title = "ViewItem";
+}
+
+<!-- Page Content -->
+<section id="wrapper" class="wrapper container">
+    <main>
+        <section class="row">
+
+            <article id="portfolioItem" class="col-xs-12">
+                <h1>@Model.Title</h1>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <!--Portfolio Item Large Image-->
+                        <img class="img-responsive portfolio-mainimage" src="@Url.Content("../../" + @Model.mainImage)" alt="@Model.Title">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Project Description</h3>
+                        <p>@Model.Description</p>
+                        <h3>Skills Demonstrated</h3>
+                        <ul>
+                            @foreach (string skill in @Model.skillsDemonstrated)
+                            {
+                                <li>@skill</li>
+                            }
+                        </ul>
+                        <h3 class="page-header">Live Site</h3>
+                        <p><a href="@Model.url" target="_blank" name="@Model.Title">Click to view @Model.Title</a></p>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+</section>

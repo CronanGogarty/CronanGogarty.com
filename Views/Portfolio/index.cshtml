@@ -1,75 +1,46 @@
-﻿@{
-    ViewBag.Title = "Portfolio Item";
+﻿@model IEnumerable<CronanGogarty.com.Models.IPortfolioItem>
+
+@{
+    ViewBag.Title = "Portfolio";
 }
 
-<link href="~/Styles/Templates/portfolio-item.css" rel="stylesheet">
+<!-- Page Header -->
 
-<!-- Page Content -->
-<div class="container">
-    <!-- Portfolio Item Heading -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                Portfolio Item
-                <small>Item Subheading</small>
-            </h1>
-        </div>
-    </div>
-    <!-- /.row -->
-    <!-- Portfolio Item Row -->
-    <div class="row">
-        <div class="col-md-8">
-            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-        </div>
-        <div class="col-md-4">
-            <h3>Project Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-            <h3>Project Details</h3>
-            <ul>
-                <li>Lorem Ipsum</li>
-                <li>Dolor Sit Amet</li>
-                <li>Consectetur</li>
-                <li>Adipiscing Elit</li>
-            </ul>
-        </div>
-    </div>
-    <!-- /.row -->
-    <!-- Related Projects Row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h3 class="page-header">Related Projects</h3>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-            <a href="#">
-                <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-            </a>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-            <a href="#">
-                <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-            </a>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-            <a href="#">
-                <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-            </a>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-            <a href="#">
-                <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-            </a>
-        </div>
-    </div>
-    <!-- /.row -->
-    <hr>
-    <!-- Footer -->
-    <footer>
+
+<section id="wrapper" class="wrapper container">
+    <main>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
+                <h1>
+                    Portfolio
+                    @*<small>Examples of my previous development work</small>*@
+                </h1>
             </div>
         </div>
-        <!-- /.row -->
-    </footer>
-</div>
-<!-- /.container -->
+        <section class="row">
+            <article id="portfolio-thumbs">
+                <div class="">
+
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-sm-6">
+                            <h3>
+                                <a href="#">@Html.DisplayFor(modelItem => item.Title)</a>
+                            </h3>
+                            <a href="~/Portfolio/ViewItem/@Html.DisplayFor(modelItem => item.ItemID)">
+                                <img class="img-responsive" src="~/@Html.DisplayFor(modelItem => item.thumbnailImage)" alt="">
+                            </a>
+                        </div>
+
+
+                    }
+
+                </div>
+            </article>
+        </section>
+    </main>
+</section>
+
+
+
+

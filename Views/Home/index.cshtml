@@ -2,11 +2,6 @@
     ViewBag.Title = "Home";
 }
 
-<header class="jumbotron  text-center">
-    <h1>CronanGogarty.com</h1>
-    <p class="hidden-xs">ASP.NET Web Forms, MVC, C#, Web API, JavaScript, jQuery, HTML5, CSS3, Bootstrap, Less, SQL</p>
-</header>
-
 <section id="wrapper" class="wrapper container">
     <main>
         <section class="row">
@@ -17,13 +12,13 @@
                         <h3>Welcome!</h3>
                         <p>
                             Hi, I'm Cronán Gogarty, a web developer in Vancouver BC.
-                            <br />
+                            @*<br />*@
                             I specialize in ASP.NET, C#, HTML5, JavaScript and CSS3. <!--I also dabble in Bootstrap, Less, Git, jQuery and whatever else it takes to get the job done!-->
                         </p>
                         <!--<p>I've previously worked as a Project Manager in the online space.</p>-->
                         <p>
                             I'm currently seeking employment within the Vancouver area.
-                            <br />
+                            @*<br />*@
                             If you are interested in hiring me, get in touch.
                         </p>
                     </div>
@@ -34,6 +29,34 @@
                 </div>
             </article>
         </section>
+
+        <section class="row">
+            <article id="portfolio-thumbs" class="text-center clearfix">
+                <div class="">
+                    <div class="col-sm-12">
+                        <h2>Previous Work</h2>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="col-sm-6">
+                        <a href="~/Portfolio/ViewItem/1"><img class="img-responsive" src="@Url.Content("../../Content/Images/Portfolio/Screenshots/Thumbnails/Colt-Poker.png")" alt="Colt Poker"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="~/Portfolio/ViewItem/4"><img class="img-responsive" src="@Url.Content("../../Content/Images/Portfolio/Screenshots/Thumbnails/HiLife-Poker.png")" alt="HiLife Poker"></a>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="col-sm-6">
+                        <a href="~/Portfolio/ViewItem/3"><img class="img-responsive" src="@Url.Content("../../Content/Images/Portfolio/Screenshots/Thumbnails/Russell-Fastraxx.png")" alt="Russell Fastraxx"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="~/Portfolio/ViewItem/5"><img class="img-responsive" src="@Url.Content("../../Content/Images/Portfolio/Screenshots/Thumbnails/National-Pen.png")" alt="National Pen"></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="marginHr" />
 
         <section class="row text-center">
             <div class="col-sm-4">

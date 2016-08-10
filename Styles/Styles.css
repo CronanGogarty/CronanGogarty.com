@@ -40,11 +40,11 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: #ffffff;
+  background-color: #f2f2f3;
   color: #000000;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body > main > ul > li {
+body main > ul > li {
   list-style: none;
 }
 header h1 {
@@ -56,6 +56,7 @@ header h1 {
   color: #ffffff;
   margin-top: 50px;
   /* 50px is the min-height of top nav bar */
+  margin-bottom: 3px;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
@@ -66,9 +67,15 @@ header h1 {
 .jumbotron h1 {
   margin-top: 0;
 }
+section#wrapper {
+  background-color: #ffffff;
+}
 section#wrapper + hr {
   border: 3px solid #e54026;
-  margin-bottom: 0;
+  margin: 0;
+}
+main {
+  /* PORTFOLIO.CSS - Style added to support portfolio template*/
 }
 main #intro {
   font-family: 'Archivo Narrow', sans-serif;
@@ -90,9 +97,36 @@ main #intro img {
 main #intro div#introImage {
   padding-left: 0;
 }
+main #portfolio-thumbs div {
+  text-align: center;
+  /*border:1px solid yellow;*/
+}
+main #portfolio-thumbs div img {
+  margin: auto;
+  margin-bottom: 20px;
+  border: 3px solid #e54026;
+}
+main #portfolio-thumbs div img:hover {
+  -moz-box-shadow: 6px 6px 3px #3e3e3e;
+  -webkit-box-shadow: 6px 6px 3px #3e3e3e;
+  box-shadow: 6px 6px 3px #3e3e3e;
+}
+main .portfolio-item {
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 0;
+}
 main a,
 main a:hover {
   color: #e54026;
+}
+main hr.marginHr {
+  border: 1px solid #e54026;
+  margin: 0;
+  margin: 40px 0 20px 0;
+}
+main article#portfolioItem {
+  margin-bottom: 40px;
 }
 footer {
   background-color: #3e3e3e;
@@ -154,9 +188,5 @@ mark {
   #cronanSnowboard1 {
     display: none !important;
   }
-}
-/* PORTFOLIO.CSS - Style added to support portfolio template*/
-.portfolio-item {
-  margin-bottom: 25px;
 }
 /*# sourceMappingURL=Styles.css.map */

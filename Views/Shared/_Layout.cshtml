@@ -16,7 +16,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!--<link href="Styles/bootstrap-theme.min.css" rel="stylesheet" />-->
-    <link rel="stylesheet" href="/Styles/Styles.min.css" media="screen">
+    <link rel="stylesheet" href="~/Styles/Styles.min.css" media="screen">
 
     <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,11 +47,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    @*<li>@Html.ActionLink("Portfolio", "Portfolio", "Home")</li>*@
+                    <li>@Html.ActionLink("Portfolio", "Index", "Portfolio")</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <header class="jumbotron  text-center">
+        <h1>CronanGogarty.com</h1>
+        <p class="hidden-xs">ASP.NET Web Forms, MVC, C#, Web API, JavaScript, jQuery, HTML5, CSS3, Bootstrap, Less, SQL</p>
+    </header>
 
     @RenderBody()
 
@@ -75,13 +80,13 @@
             </div>
         </div>
         <div id="subFooter">
-            <p>&copy; Cronán Gogarty 2016</p>
+            <p>&copy; Cronán Gogarty @DateTime.Now.Year</p>
             <p class="adsDisclaimer">I have some ads below, click on an ad and eventually Google will send me some pennies.</p>
             <br />
-            <!--ADS-->
+            <!--ADS
             <aside>
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- CronanGogarty.com -->
+                <!-- CronanGogarty.com
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-2564256331143005"
@@ -91,7 +96,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </aside>
-            <!--END ADS-->
+            END ADS-->
             <br />
         </div>
         

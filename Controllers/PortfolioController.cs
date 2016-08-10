@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CronanGogarty.com.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,27 @@ namespace CronanGogarty.com.Controllers
         // GET: Portfolio
         public ActionResult Index()
         {
-            return View();
+            var portfolioService = new PortfolioService();
+
+            IList<IPortfolioItem> items = portfolioService.AllItems();
+
+            return View(items);
+        }
+
+        //public ActionResult Random()
+        //{
+        //    PortfolioItem item = new PortfolioItem() { Title = "ColtPoker.com" };
+            
+        //    return View(item);
+        //}
+
+        public ActionResult ViewItem(byte id)
+        {
+            var portfolioService = new PortfolioService();
+
+            IPortfolioItem item = portfolioService.GetItem(id);
+
+            return View(item);
         }
     }
 }
